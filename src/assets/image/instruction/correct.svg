@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="140px" height="140px" viewBox="0 0 140 140" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 20</title>
+    <g id="学生端" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="答案解析完成" transform="translate(-1182, -3598)" fill="#3BC676" fill-rule="nonzero">
+            <g id="编组-20" transform="translate(1182, 3598)">
+                <g id="正确" transform="translate(-0, 0)">
+                    <path d="M0,88.6528425 C0,88.6528425 38.8658485,104.886444 58.1802793,140 C81.3852448,96.5524052 125.919029,56.0276485 139.111299,53.0258146 L139.111299,0 C85.9472421,35.1135563 60.4119058,99.751728 60.4119058,99.751728 L32.4672027,70.0098745 L0,88.6528425 Z" id="路径"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

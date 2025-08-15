@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="202px" height="64px" viewBox="0 0 202 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>资源 1</title>
+    <defs>
+        <filter x="-9.7%" y="-36.9%" width="119.4%" height="183.3%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0.568627451   0 0 0 0 1  0 0 0 0.559303977 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <polygon id="path-2" points="31 28 0 28 6.81692635 14.0055096 0 0 31 0"></polygon>
+        <filter x="-24.2%" y="-26.8%" width="148.4%" height="153.6%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="6.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="-2" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0.568627451   0 0 0 0 1  0 0 0 0.554851399 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <polygon id="path-4" points="149 28 180 28 173.172096 14.0055096 180 0 149 0"></polygon>
+        <filter x="-24.2%" y="-26.8%" width="148.4%" height="153.6%" filterUnits="objectBoundingBox" id="filter-5">
+            <feGaussianBlur stdDeviation="6.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="-2" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0.568627451   0 0 0 0 1  0 0 0 0.554851399 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <path d="M156,38.4823813 L128.126563,40.5721641 C102.745783,42.4759453 77.2542174,42.4759453 51.8734368,40.5721641 L24,38.4823813 L24,8 L51.8734368,10.0897828 C77.2542174,11.993564 102.745783,11.993564 128.126563,10.0897828 L156,8 L156,38.4823813 Z" id="path-6"></path>
+        <filter x="-5.7%" y="-22.1%" width="111.4%" height="144.1%" filterUnits="objectBoundingBox" id="filter-7">
+            <feGaussianBlur stdDeviation="6.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="-2" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0.568627451   0 0 0 0 1  0 0 0 0.554851399 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="学生端" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="分组情况" transform="translate(-1115, -187)" fill-rule="nonzero">
+            <g id="资源-1" filter="url(#filter-1)" transform="translate(1126, 196)">
+                <g id="路径">
+                    <use fill-opacity="0.695367133" fill="#0091FF" xlink:href="#path-2"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                </g>
+                <polygon id="路径" fill="#0091FF" points="31 30.9282022 24 38 24 7.59563469 31 0"></polygon>
+                <g id="路径">
+                    <use fill-opacity="0.695367133" fill="#0091FF" xlink:href="#path-4"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                </g>
+                <polygon id="路径" fill="#0091FF" points="149 30.9282022 156 38 156 7.59563469 149 0"></polygon>
+                <g id="路径">
+                    <use fill-opacity="0.695367133" fill="#0091FF" xlink:href="#path-6"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

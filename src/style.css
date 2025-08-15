@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.drawer-title {
+	@apply text-lg leading-10 mb-4 border-l-4 border-[#0091FF] ml-[-24px] pl-6;
+}
+.card-title {
+	@apply border-l-4 border-[#1E429C] pl-2 leading-none;
+}
+
+.card-layout {
+	@apply grid grid-cols-3 gap-4 pb-2;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+	display: none;
+}
+
+.hide-scrollbar {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+/* 描述列表通用样式 */
+.ant-descriptions .ant-descriptions-item-container .ant-descriptions-item-label {
+	display: inline !important;
+	text-align: right !important;
+	width: 102px !important;
+	color: #999 !important;
+}
+
+/* 卡片列表字体描述颜色 */
+.ant-card-body .card-description {
+	color: #999 !important;
+}
+
+@font-face {
+	font-family: 'MyIconFont';
+	src: url('./styles/lltf.ttf');
+}

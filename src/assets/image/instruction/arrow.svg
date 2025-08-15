@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>下拉</title>
+    <g id="学生端" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="答案解析完成" transform="translate(-929, -3803)" fill-rule="nonzero">
+            <g id="编组-16" transform="translate(611, 3433)">
+                <g id="下拉" transform="translate(318, 370)">
+                    <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="14" height="14"></rect>
+                    <path d="M9.88166211,5.215 C10.2264179,4.893716 10.7636926,4.90317858 11.0969211,5.23640336 C11.4301496,5.56962813 11.4396181,6.10690277 11.1183379,6.45166211 L7.65975,9.91083789 C7.29530916,10.2750364 6.70469084,10.2750364 6.34025,9.91083789 L2.88108789,6.45166211 C2.54982755,6.10814824 2.55490911,5.56255468 2.89251028,5.22527046 C3.23011144,4.88798625 3.77570954,4.88341715 4.11891211,5.215 L7,8.0955 L9.88166211,5.21383789 L9.88166211,5.215 Z" id="路径" fill="#0091FF" transform="translate(6.9946, 7.5766) scale(1, -1) translate(-6.9946, -7.5766)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
