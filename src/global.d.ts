@@ -10,7 +10,7 @@ import { ReportTable } from '@/view/__report';
 
 declare module 'uuid';
 
-declare module '@vue/runtime-core' {
+declare module 'vue' {
 	interface ComponentCustomProperties {
 		$datetime: typeof datetime;
 		$security: typeof security;
@@ -19,12 +19,6 @@ declare module '@vue/runtime-core' {
 		$download: typeof download;
 		$reload: () => void;
 		$config: { api: string; file: string; clientPage: ClientPageType };
-	}
-}
-declare module 'snowyflake' {
-	export class Snowyflake {
-		constructor(options?: any);
-		// 添加你需要使用的其他方法声明
 	}
 }
 declare global {
@@ -146,7 +140,7 @@ declare global {
 		questionData: Array<string>;
 	};
 	type TableData = Array<Array<TableDataItem>>;
-	type TableDataItem = { value: string; colspan: number; rowspan: number; id: number };
+	type TableDataItem = { value: string; colspan: number; rowspan: number; id: string };
 	type DictionaryOption = Record<number, Array<Option>>;
 	// 0: 开发者  1:准格尔旗 2: 吉林铁道  3: 中山 4: 鄂尔多斯
 	type ClientPageType = '0' | '1' | '2' | '3' | '4';
@@ -175,4 +169,9 @@ declare module 'vue-router' {
 		title: string;
 		icon?: string;
 	}
+}
+declare module '@vue-office/docx/lib/v3/vue-office-docx.mjs' {
+	import type { DefineComponent } from 'vue';
+	const component: DefineComponent<Record<string, any>, {}, any>;
+	export default component;
 }

@@ -4,7 +4,7 @@ import emitter from '@/utils/event.ts';
 import { onClickOutside, useStorage } from '@vueuse/core';
 
 const tableData = defineModel<TableData>('tableData', { required: true });
-const errorCells = defineModel<Array<number>>('errorCells', { required: true });
+const errorCells = defineModel<Array<string>>('errorCells', { required: true });
 
 const router = useRouter();
 
@@ -49,8 +49,8 @@ const handleContentChange = (event: Event) => {
 	tableData.value[editingTd.value?.row!][editingTd.value?.col!].value = (event.target as HTMLPreElement).innerText;
 };
 
-const selectCell = ref<Array<number>>([]);
-const handleClickCell = (cellId: number) => {
+const selectCell = ref<Array<string>>([]);
+const handleClickCell = (cellId: string) => {
 	if (params.type === 'edit') return;
 	if (params.type === 'audit') {
 		errorCells.value = [];

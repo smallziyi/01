@@ -14,10 +14,22 @@
 				</a-radio-group>
 			</a-form-item>
 			<a-form-item name="startTime" label="合同生效日期" :rules="[{ required: true, message: '请选择生效日期' }]">
-				<a-date-picker class="w-full" v-model:value="contract.startTime"></a-date-picker>
+				<a-date-picker
+					:show-time="{ format: 'HH:mm' }"
+					format="YYYY-MM-DD HH:mm"
+					v-model:value="contract.startTime"
+					class="w-full"
+					placeholder="请选择"
+				></a-date-picker>
 			</a-form-item>
 			<a-form-item name="endTime" label="合同终止日期" :rules="[{ required: true, message: '请选择终止日期' }]">
-				<a-date-picker class="w-full" v-model:value="contract.endTime"></a-date-picker>
+				<a-date-picker
+					:show-time="{ format: 'HH:mm' }"
+					format="YYYY-MM-DD HH:mm"
+					v-model:value="contract.endTime"
+					class="w-full"
+					placeholder="请选择"
+				></a-date-picker>
 			</a-form-item>
 			<a-form-item name="deployType" label="部署方式" :rules="[{ required: true, message: '请选择部署方式' }]">
 				<a-radio-group v-model:value="contract.deployType">
@@ -48,6 +60,7 @@
 			</a-form-item>
 			<a-form-item
 				label="合同文件"
+				name="fileId"
 				:rules="contract.contractType === 1 ? [{ required: true, message: '请上传合同文件' }] : []"
 			>
 				<a-upload
@@ -84,6 +97,8 @@ const handleSubmit = () => {
 	form.value
 		?.validate()
 		.then(() => {
+			// contract.value.startTime = dayjs(contract.value.startTime).toISOString();
+			// contract.value.endTime = dayjs(contract.value.endTime).toISOString();
 			createContract(contract.value).then(() => {
 				open.value = false;
 				emit('success');

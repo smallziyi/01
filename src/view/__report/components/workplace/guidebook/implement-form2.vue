@@ -72,11 +72,11 @@ const handleUpdate = (result: Array<SentencePart>, id: string, name: string) => 
 							.filter((var1) => var1.isMark)
 							.map((var2) => var2.text)
 							.join('、'),
-						id: snowyflake.nextId(),
+						id: snowyflake.nextId().toString(),
 					},
-					{ isCorrect: false, content: '', id: snowyflake.nextId() },
-					{ isCorrect: false, content: '', id: snowyflake.nextId() },
-					{ isCorrect: false, content: '', id: snowyflake.nextId() },
+					{ isCorrect: false, content: '', id: snowyflake.nextId().toString() },
+					{ isCorrect: false, content: '', id: snowyflake.nextId().toString() },
+					{ isCorrect: false, content: '', id: snowyflake.nextId().toString() },
 				],
 				tableFormType: 4,
 			});

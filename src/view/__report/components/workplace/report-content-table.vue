@@ -105,7 +105,7 @@ const pageState = reactive<{
 	resetTable: boolean;
 	editTableName: boolean;
 	newTableName: string;
-	errorCells: Array<number>;
+	errorCells: Array<string>;
 }>({
 	activeKey: '',
 	loading: false,
