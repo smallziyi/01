@@ -17,8 +17,8 @@ router.beforeEach(async (to, _from, next) => {
 		next('/404');
 		return;
 	}
-
-	if (to.path === '/login' || to.path === '/403' || to.path === '/about') {
+ 
+	if (to.path === '/login' || to.path === '/403' || to.path === '/about' ||to.path==='/') {
 		next();
 		return;
 	}

@@ -1,0 +1,123 @@
+@layer components {
+  .form-item {
+    position: relative;
+    padding-bottom: 2rem; /* 预留错误信息空间 */
+  }
+
+  .form-item-vertical {
+    @apply flex flex-col;
+  }
+
+  .form-item-horizontal {
+    @apply flex flex-row items-start;
+  }
+
+  .form-item-horizontal .form-item-label {
+    @apply mr-4 w-1/4 pt-2;
+  }
+
+  .form-item-horizontal .form-item-control {
+    @apply flex-1;
+  }
+
+  .form-item-inline {
+    @apply flex flex-row items-center;
+  }
+
+  .form-item-inline .form-item-label {
+    @apply mr-2 mb-0;
+  }
+
+  .form-item-inline .form-item-control {
+    @apply flex-1;
+  }
+
+  /* 标签样式 */
+  .form-item-label {
+    @apply mb-2 flex items-center justify-between;
+  }
+
+  .form-label {
+    @apply text-sm font-medium text-gray-700 dark:text-gray-300;
+  }
+
+  .form-label-required::after {
+    content: '';
+  }
+
+  .form-label-asterisk {
+    @apply ml-1 text-red-500;
+  }
+
+  .form-label-tip {
+    @apply ml-2;
+  }
+
+  .form-label-tip i {
+    @apply cursor-help text-gray-400;
+  }
+
+  /* 控件区域样式 */
+  .form-item-control {
+    @apply w-full;
+  }
+
+  .form-control-wrapper {
+    @apply flex items-center;
+  }
+
+  .form-control-main {
+    @apply flex-1;
+  }
+
+  .form-control-prefix,
+  .form-control-suffix {
+    @apply flex items-center px-2;
+  }
+
+  /* 错误状态样式 */
+  .form-item-error .form-control-wrapper {
+    @apply border-red-500;
+  }
+
+  .form-item-error-message {
+    @apply flex items-center text-sm text-red-600;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-height: 2rem;
+  }
+
+  .form-item-error-message i {
+    @apply mr-1;
+  }
+
+  /* 帮助信息样式 */
+  .form-item-help {
+    @apply text-xs text-gray-500;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  /* 当有错误信息时，帮助信息上移 */
+  .form-item-error .form-item-help {
+    bottom: 1.5rem;
+  }
+
+  /* 禁用状态样式 */
+  .form-item-disabled {
+    @apply pointer-events-none opacity-60;
+  }
+
+  .form-item-readonly {
+    @apply pointer-events-none;
+  }
+
+  /* 必填项标识 */
+  .form-item-required .form-label {
+    @apply relative;
+  }
+}
