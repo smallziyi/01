@@ -3,7 +3,7 @@
     <!-- 第一部分 -->
     <div class="container ml-4 py-4">
       <div class="flex">
-        <img src="../../public/logo.svg" alt="logo" class="w-10 h-10 rounded-full mr-3" />
+        <img src="/logo.svg" alt="logo" class="w-10 h-10 rounded-full mr-3" />
         <div class="text-white text-sm">
           <p>北京正道智源教育科技有限公司</p>
           <p>北京华德智源教育科技产业有限公司</p>
@@ -16,7 +16,7 @@
       <div class="flex flex-col md:flex-row items-center justify-center gap-17">
         <h1 class="text-white text-3xl ml-10">工作过程系统化相关业务服务平台</h1>
         <div class="">
-          <img src="../../public/background.png" alt="右侧插图" class="w-100 h-60" />
+          <img src="/background.png" alt="右侧插图" class="w-100 h-60" />
         </div>
       </div>
     </div>
@@ -41,7 +41,7 @@
               <div
                 class="flex justify-end items-center mr-[6px] group-hover:-translate-y-[5px] -translate-x-[6px]  group-hover:scale-125 transform duration-300"
               >
-                <img src="../../public/jiqi.svg" alt="" />
+                <img src="/jiqi.svg" alt="" />
               </div>
             </div>
             <div
@@ -49,7 +49,7 @@
               :class="`${project.rightColorClass1}`"
             >
               <div
-                class="absolute left-0 top-0 w-[112px] h-[32px] bg-[url(../../public/as.png)] bg-no-repeat pl-5 leading-8 group-hover:opacity-0"
+                class="absolute left-0 top-0 w-[112px] h-[32px] bg-[url(/as.png)] bg-no-repeat pl-5 leading-8 group-hover:opacity-0"
                  :class="{
               'text-blue-500': !['05','06'].includes(project.id), // 非5、6时用蓝色
               'text-assist': ['05','06'].includes(project.id) // 5、6时用浅灰色

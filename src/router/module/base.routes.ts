@@ -6,9 +6,8 @@ import Feedback from '@/view/feedback.vue';
 const Login = () => import('@/view/base/login/index.vue');
 const SchoolLogin = () => import('@/view/base/login/login-school.vue');
 const baseRoutes: RouteRecordRaw[] = [
-		{path:'/',name:'',meta: { isHide: true, title: '首页' },component:()=>import("@/layout/login.vue")},
-	
-
+	{ path: '/', redirect: '/home' },
+	{ path: '/home', name: 'home', meta: { isHide: true, title: '首页' }, component: () => import('@/layout/login.vue') },
 	{
 		path: '/login',
 		meta: { isHide: true, title: '登录页' },
