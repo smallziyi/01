@@ -22,12 +22,16 @@
     </div>
 
     <!-- 第三部分：六个盒子 -->
-    <div class="bg-[#ffffff] -mt-8 rounded-t-3xl px-[169px] pt-[80.5px]">
+    <div class=" -mt-8 rounded-t-3xl px-[169px] pt-[80.5px]   bg-[#FAFAFA] ">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-[70px] max-w-full mx-auto">
         <div
           v-for="project in porjectList"
           :key="project.id"
-          class="group relative h-[140px] hover:-translate-y-[5px] cursor-pointer transform duration-300  "
+          class="group relative h-[140px] hover:-translate-y-[5px] cursor-pointer transform duration-300 
+          box-shadow: 0px 0px 12px 0px #00000008;
+
+
+           "
           @click="handleGoto(project)"
         >
           
@@ -45,22 +49,27 @@
               </div>
             </div>
             <div
-              class="flex-1 rounded-[4px] overflow-hidden relative"
+              class="flex-1 rounded-[4px] overflow-hidden relative 
+               shadow-[-3px_-3px_10px_rgba(209,213,219,0.5)]
+              "
+              
               :class="`${project.rightColorClass1}`"
             >
               <div
                 class="absolute left-0 top-0 w-[112px] h-[32px] bg-[url(/as.png)] bg-no-repeat pl-5 leading-8 group-hover:opacity-0"
                  :class="{
               'text-blue-500': !['05','06'].includes(project.id), // 非5、6时用蓝色
-              'text-assist': ['05','06'].includes(project.id) // 5、6时用浅灰色
+              'text-[#BFBFBF]': ['05','06'].includes(project.id) // 5、6时用浅灰色
             }"
               >
                 {{ project.version }}
               </div>
-              <div class="  flex items-center  justify-center px-4  w-full h-full  text-amber-50"
+              <div class="  flex items-center  justify-center px-4  w-full h-full 
+               text-[20px]  text-center
+               "
                :class="{
-              'text-amber-50': !['05','06'].includes(project.id), // 非5、6时用原有颜色
-              'text-assist': ['05','06'].includes(project.id) // 5、6时用灰色
+              'text-[#ffffff]': !['05','06'].includes(project.id), // 非5、6时用原有颜色
+              'text-[#8C8C8C]': ['05','06'].includes(project.id) // 5、6时用灰色
             }"
               >
                 {{ project.name }}
@@ -69,12 +78,17 @@
           </div>
           <div
           v-if="['05','06'].includes(project.id)"
-        class="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+        class="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 transition-opacity duration-300 group-hover:opacity-100
+           rounded-[4px]
+        "
       >
-        <span class="text-lg font-medium text-white">努力开发中...</span>
+        <span class="text-lg font-medium  text-[#BFBFBF]">努力开发中...</span>
       </div>
         </div>
       </div>
+
+    </div>
+    <div  class=" bg-white h-[84px] w-full">
 
     </div>
   </div>
@@ -82,6 +96,7 @@
 
 <script setup>
 import router from '@/router'
+
 const porjectList = [
   {
     id: '01',
@@ -89,7 +104,8 @@ const porjectList = [
     version: '标准版',
     leftcolorClass: 'bg-[#2CA4FF]',
     rightColorClass1: 'bg-gradient-to-r from-[#219DFB] to-[#75C1FB] ',
-    address:'http://www.workcourse.top/login'
+    address:'http://www.workcourse.top/login',
+    url:"../../public/img1.svg"
   },
   {
     id: '02',
@@ -97,8 +113,10 @@ const porjectList = [
     version: 'Lite版',
     leftcolorClass: 'bg-[#9CD3FF]',
     rightColorClass1: 'bg-gradient-to-r from-[#9CD3FF] to-[#9CD4FF] ',
-    address:'http://lite.workcourse.top/domain/login'
-  
+    address:'http://lite.workcourse.top/domain/login',
+    url:"../../public/img2.svg"
+
+    
   },
   {
     id: '03',
@@ -106,7 +124,10 @@ const porjectList = [
     version: '标准版',
     leftcolorClass: 'bg-[#8BB3FF]',
     rightColorClass1: 'bg-gradient-to-r from-[#8BB3FF] to-[#BCD0FB] ',
-    address:'http://competition.workcourse.top/competition/login'
+    address:'http://competition.workcourse.top/competition/login',
+      url:"../../public/img3.svg"
+
+
 
   },
   {
@@ -115,7 +136,10 @@ const porjectList = [
     version: '标准版',
     leftcolorClass: 'bg-[#52EAD2]',
     rightColorClass1: 'bg-gradient-to-r from-[#52EAD2] to-[#7AE7F3] ',
-    address:'http://high.workcourse.top/login'
+    address:'http://high.workcourse.top/login',
+       url:"../../public/img4.svg"
+
+
 
   },
 
@@ -125,7 +149,10 @@ const porjectList = [
     version: '开发中',
     leftcolorClass: 'bg-[#E6E6E6]',
     rightColorClass1: 'bg-[#E6E6E6]',
-    address:''
+    address:'',
+        url:"../../public/img5.svg"
+
+
   },
   {
     id: '06',
@@ -133,7 +160,10 @@ const porjectList = [
     version: '开发中',
     leftcolorClass: 'bg-[#E6E6E6]',
     rightColorClass1: 'bg-[#E6E6E6]',
-    address:''
+    address:'',
+        url:"../../public/img6.svg"
+
+
   },
 ]
 
